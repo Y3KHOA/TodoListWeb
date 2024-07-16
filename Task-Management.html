@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+</head>
+
+<style>
+    .form-control {
+        display: flex;
+    }
+    #content {
+        padding: 5px;
+        height: 45px;
+        width: 400px;
+        resize: none;
+    }
+    .form-control button {
+        height: 58px;
+        line-height: 45px;
+        border: none;
+        padding: 5px;
+        background: greenyellow;
+        text-align: center;
+        width: 80px;
+        margin-left: 5px;
+        font-weight: bold;
+    }
+
+    .form-control button:hover {
+        background: yellow;
+        cursor: pointer;
+    }
+
+    #list-task {
+        width: 600px;
+    }
+    
+    #list-task h4 {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    #list-task ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #list-task ul li{
+        display: flex;
+        background-color: #f1f1f1;
+        padding: 5px;
+        margin-bottom: 5px;
+        justify-content: space-around;
+    }
+
+    #list-task ul li div{
+        width: 80%;
+    }
+    
+    #list-task ul li a {
+        text-decoration: none;
+        display: block;
+        margin-right: 8px;
+        color: white;
+        padding: 5px;
+    }
+
+    #list-task ul li a:nth-of-type(1){
+        background: yellowgreen;
+        cursor: pointer;
+    }
+
+    #list-task ul li a:nth-of-type(2){
+        background: yellowgreen;
+        cursor: pointer;
+    }
+</style>
+
+
+<body>
+    <div class="form-control">
+        <textarea class="content" id="content" placeholder="Task name..."></textarea>
+        <button class="btnAdd">Add</button>
+        <!-- <button class="btnCancel">Cancel</button> -->
+    </div>
+
+    <div id="list-task">
+        <h4>List Tasks</h4>
+        <ul>
+            <li>
+                <div class="task-name">Learn english</div>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>                
+            </li>
+            <li>
+                <div class="task-name">Learn english</div>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>                
+            </li>
+            <li>
+                <div class="task-name">Learn english</div>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>                
+            </li>
+            <li>
+                <div class="task-name">Learn english</div>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>                
+            </li>
+        </ul>
+    </div>
+    
+<script src="JS/Task.js"></script>
+</body>
+</html>
