@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    /* background-color: #0b87ff; */
+  }
+  #logo {
+    width: 20vw; /* Sử dụng đơn vị viewport width để logo co giãn theo chiều rộng của trang */
+    max-width: 300px; /* Đặt giới hạn kích thước tối đa cho logo */
+    min-width: 100px; /* Đặt giới hạn kích thước tối thiểu cho logo */
+    position: absolute;
+    transform: translate(-50%, 0);
+    top: 10px;
+    left: 50%;
+}
+  .container {
+    width: 90%;
+    max-width: 600px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  #new-task {
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    /* border-radius: 5px; */
+    box-shadow: 0 20px 30px rgba(1, 24, 48, 0.15);
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 16px;
+  }
+  #new-task input {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #d1d3d4;
+    padding: 13px 8px;
+    color: #111111;
+    font-weight: 500;
+  }
+  #new-task input:focus {
+    outline: none;
+    border-color: #0fff13;
+  }
+  #new-task button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #0fff13;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+  }
+  #tasks {
+    background-color: #ffffff;
+    position: relative;
+    padding: 30px 20px;
+    /* margin-top: 600px; */
+    width: 100%;
+    box-shadow: 0 20px 30px rgba(1, 24, 48, 0.15);
+    /* border-radius: 10px; */
+  }
+  .task {
+    background-color: #ffffff;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+  }
+  .task span {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .task button {
+    color: #ffffff;
+    padding: 13px 0;
+    width: 45px;
+    /* border-radius: 5px; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .delete {
+    background-color: #0fff13;
+    /* margin: auto; */
+  }
+  .edit {
+    background-color: #0fff13;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  .completed {
+    text-decoration: line-through;
+  }
+  .edit, .delete {
+    font-size: 14px; /* Giảm kích thước chữ */
+    padding: 10px 5px; /* Giảm padding */
+    width: auto; /* Đặt chiều rộng tự động */
+    min-width: 70px; /* Đặt chiều rộng tối thiểu */
+}
+.checkbox {
+    margin-right: 10px;
+  }
+  
+  .completed span {
+    text-decoration: line-through;
+  }
+  
+  .completed .edit {
+    visibility: hidden;
+  }
